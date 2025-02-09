@@ -20,8 +20,8 @@ jobs:
       # Step 3: Create a new commit
       - name: Create a new commit
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "nayakshubham2"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b daily-commit
           echo "Daily commit on $(date)" >> daily-commit.txt
           git add daily-commit.txt
