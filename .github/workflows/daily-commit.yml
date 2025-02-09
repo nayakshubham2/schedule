@@ -1,5 +1,9 @@
 name: Daily Commit Workflow
 
+on:
+  schedule:
+    # Runs daily at 12:00 UTC (adjust the cron syntax as needed)
+    - cron: '* * * * *'
 jobs:
   commit:
     runs-on: ubuntu-latest
